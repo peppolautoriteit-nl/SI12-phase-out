@@ -7,7 +7,7 @@ Standaardisatieplatform e-factureren (STPE) and the Netherlands Peppol Authority
 
 # History
 
-SI-UBL 1.2 is the third version of the Simplerinvoicing document format. It is a subseet of the UBL Invoice format, and was created by the members of Simplerinvoicing for e-invoicing use in the Netherlands.
+SI-UBL 1.2 is the third version of the Simplerinvoicing document format. It is a subset of the UBL Invoice format, and was created by the members of Simplerinvoicing for e-invoicing use in the Netherlands.
 
 In 2018, after the publication of European Norm EN-16931, the STPE created a Core Invoice Usage specification for EN-16931 for use in the Netherlands, called NLCIUS. To conform to EN-16931 and NLCIUS, SI-UBL was updated to SI-UBL 2.0.
 
@@ -20,7 +20,7 @@ The issues identified at time were:
 
 # Why phase out SI-UBL 1.2
 
-Interoperability is best served if there are less different document formats to need to support: each format requires both software and operational maintenance. While there are valid use-cases for several different document formats, it should always be a goal to have as few as possible. Especially if there are newer versions of a format, thee older ones should at some point be phased out.
+Interoperability is best served if there are less different document formats to need to support: each format requires both software and operational maintenance. While there are valid use-cases for several different document formats, it should always be a goal to have as few as possible. Especially if there are newer versions of a format, the older ones should at some point be phased out.
 
 This does require that the necessity for SI-UBL 1.2 is removed. This can take several forms:
 - Add the missing functionality to another format
@@ -50,7 +50,7 @@ Missing billing reference in credit notes | See section 'Billing reference'
 No AccountingCostCode field | Use AccountingCost OR update NLCIUS?
 No cost center accounting field | Use AccountingCost
 No validation of line-level calculation | If this is wanted, use Peppol BIS, which does have line-level calculation validation
-Mandatory KvK or OIN | In Peppol BIS (with NL rules), KvK or OIN is only mandatory if the optional LegalIdentifier is used.
+Mandatory KvK or OIN | Use Peppol BIS (with NL rules), where KvK or OIN is only mandatory if the optional LegalIdentifier is used.
 
 
 
