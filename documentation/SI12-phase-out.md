@@ -25,7 +25,7 @@ Interoperability is best served if there are less different document formats to 
 This does require that the necessity for SI-UBL 1.2 is removed. This can take several forms:
 - Add the missing functionality to another format
 - Work around limitations of the other formats
-- Remove the scenario there the functionality is needed (e.g. work around the issue by using a different but functionally equivalent method)
+- Remove the scenario where the functionality is needed (e.g. work around the issue by using a different but functionally equivalent method)
 
 # Current status
 
@@ -46,12 +46,25 @@ Issue | Solution/workaround
 No line-level VAT | Proposed amendment of EN-16931
 No support for g-account | Use the g-account extension
 Rounding issues | Rounding tolerance in EN-16931 validation
-Missing billing reference in credit notes | See section 'Billing reference'
+Missing billing reference in credit notes | See section 'Billing Reference'
+Need credit notes without billing reference | See section 'Billing Reference'
 No AccountingCostCode field | Use AccountingCost OR update NLCIUS?
 No cost center accounting field | Use AccountingCost
 No validation of line-level calculation | If this is wanted, use Peppol BIS, which does have line-level calculation validation
 Mandatory KvK or OIN | Use Peppol BIS (with NL rules), where KvK or OIN is only mandatory if the optional LegalIdentifier is used.
 
+
+## Billing Reference
+
+There are two conflicting requirements regarding billing reference:
+1. Some parties complain that the billing reference is not always filled in in Credit Notes
+2. Other parties complain that they need to provide credit notes without a billing reference (Scenario P9 in NLCIUS)
+
+For corrective invoices (typecode 384) it is currently mandated, which makes sense.
+
+One proposed solution is to create a warning for typecode 381 (creditnote) without a billing reference, but a warning does not enforce anything, so the issue isn't solved. Additionally, a valid scenario would then generate warnings, which is also not desirable.
+
+Our proposed solution is to mandate the billinreference in documents with typecode 381. The other scenario (no billing reference) could be solved with a general negative invoice (typecode 380 with a negative payable amount).
 
 
 # Way forward
