@@ -47,12 +47,11 @@ No line-level VAT | Proposed amendment of EN-16931
 No support for g-account | Use the g-account extension
 Rounding issues | Rounding tolerance in EN-16931 validation
 Missing billing reference in credit notes | See section 'Billing reference'
-No cost center accounting field (*) | None as of yet
-No cost type field (*) | None as of yet
+No AccountingCostCode field | Use AccountingCost OR update NLCIUS?
+No cost center accounting field | Use AccountingCost
 No validation of line-level calculation | If this is wanted, use Peppol BIS, which does have line-level calculation validation
 Mandatory KvK or OIN | In Peppol BIS (with NL rules), KvK or OIN is only mandatory if the optional LegalIdentifier is used.
 
-(*) Are these issues in SI-UBL 2.0 and not SI-UBL 1.2, or general issues with all current formats?
 
 
 # Way forward
