@@ -57,14 +57,16 @@ Mandatory KvK or OIN | Use Peppol BIS (with NL rules), where KvK or OIN is only 
 ## Billing Reference
 
 There are two conflicting requirements regarding billing reference:
-1. Some parties complain that the billing reference is not always filled in in Credit Notes
+1. Some parties complain that the billing reference is not always filled in Credit Notes
 2. Other parties complain that they need to provide credit notes without a billing reference (Scenario P9 in NLCIUS)
 
 For corrective invoices (typecode 384) it is currently mandated, which makes sense.
 
 One proposed solution is to create a warning for typecode 381 (creditnote) without a billing reference, but a warning does not enforce anything, so the issue isn't solved. Additionally, a valid scenario would then generate warnings, which is also not desirable.
 
-Our proposed solution is to mandate the billinreference in documents with typecode 381. The other scenario (no billing reference) could be solved with a general negative invoice (typecode 380 with a negative payable amount).
+Our proposed solution is to mandate the billing reference in documents with typecode 381. The other scenario (no billing reference) could be solved with a general negative invoice (typecode 380 with a negative invoice line and/or payable amount).
+
+This is already planned for the NL rules in Peppol BIS, so the future workaround could be to use Peppol BIS for this scenario. It might be an additional rule for NLCIUS as well.
 
 
 # Way forward
