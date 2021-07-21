@@ -9,9 +9,9 @@ Standaardisatieplatform e-factureren (STPE) and the Netherlands Peppol Authority
 
 SI-UBL 1.2 is the third version of the Simplerinvoicing document format. It is a subset of the UBL Invoice format, and was created by the members of Simplerinvoicing for e-invoicing use in the Netherlands.
 
-In 2018, after the publication of European Norm EN-16931, the STPE created a Core Invoice Usage specification for EN-16931 for use in the Netherlands, called NLCIUS. To conform to EN-16931 and NLCIUS, SI-UBL was updated to SI-UBL 2.0.
+In 2018, after the publication of European Norm EN-16931, the STPE created a Core Invoice Usage Specification (CIUS) for EN-16931 for use in the Netherlands, called NLCIUS. To conform to EN-16931 and NLCIUS, SI-UBL was updated to SI-UBL 2.0. 
 
-After this update, there was an attempt to phase out SI-UBL 1.2, but it turned out this wasn't possible at that time, due to a number of participants and service providers relying on features in SI-UBL 1.2 that were no longer present in SI-UBL 2.0. These were mostly due to restrictions in the European Norm.
+After this update, there was an attempt to phase out SI-UBL 1.2, but it turned out this wasn't possible at that time, due to a number of participants and service providers relying on features in SI-UBL 1.2 that were no longer present in SI-UBL 2.0. These were removed mostly due to restrictions in the European Norm.
 
 The issues identified at time were:
 1. Calculating VAT on invoice line level
