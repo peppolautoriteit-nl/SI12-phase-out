@@ -13,24 +13,23 @@ In 2018, after the publication of European Norm EN-16931, the STPE created a Cor
 
 After this update, there was an attempt to phase out SI-UBL 1.2, but it turned out this wasn't possible at that time, due to a number of participants and service providers relying on features in SI-UBL 1.2 that were no longer present in SI-UBL 2.0. These were removed mostly due to restrictions in the European Norm.
 
-The issues identified at time were:
+The features that were blocking the phase out of SI-UBL 1.2 were:
 1. Calculating VAT on invoice line level
 2. Using G-Accounts
 3. Rounding differences because of using multiple decimals
 
 # Why phase out SI-UBL 1.2
 
-Interoperability is best served if there are less different document formats to need to support: each format requires both software and operational maintenance. While there are valid use-cases for several different document formats, it should always be a goal to have as few as possible. Especially if there are newer versions of a format, the older ones should at some point be phased out.
+Interoperability is best served if there very few document formats to support, since each format requires both software and operational maintenance. While there can be valid reasons for having several different document formats, it should always be a goal to have as few as possible. Especially if there are newer versions of a format, the older ones should at some point be phased out.
 
-This does require that the necessity for SI-UBL 1.2 is removed. This can take several forms:
-- Add the missing functionality to another format
+This requires that users replace their support for SI-UBL 1.2 with one of the other document formats we mentioned earlier: SI-UBL 2.0 or PEPPOL BIS 3. This can take several forms:
+- Add the missing functionality to the other format
 - Work around limitations of the other formats
-- Remove the scenario where the functionality is needed (e.g. work around the issue by using a different but functionally equivalent method)
+- Remove the business need for the functionality in the first place
 
 # Current status
 
-Many things have changed between 2018 and 2021. These changes include changes in SI-UBL 2.0, Peppol BIS3 and the European norm.
-the creation/adoption of invoice extensions for SI-UBL 2.0, changes in the European norm and the implementation of country specific rules for Peppol BIS3.
+Since 2018 there have been changes to both of the newer document formats: SI-UBL 2.0 and Peppol BIS3. We've also seen the creation/adoption of invoice extensions for SI-UBL 2.0 (notably G-rekening), changes in the European norm and the implementation of country specific rules for Peppol BIS3.
 
 Specifically, regarding the issues identified originally:
 - A g-account extension has been specified and deployed
@@ -74,7 +73,7 @@ This is already planned for the NL rules in Peppol BIS, so the future workaround
 For each issue, the following things need to be considered:
 
 1. Does the solution or workaround actually solve the problem? (i.e. can the Service providers and End users actually use it instead of SI-UBL 1.2)
-2. If so, is it known when the solution is deployed (if it hasn't already been)?
+2. If so, is it known when the solution is deployed by users (if it hasn't already been)?
 3. If not, is the problem large enough to warrant a solution (i.e. is it a problem only very few parties have, and does it completely block them from using e-invoicing, or could they in theory do without?)
 4. If so, determine a new solution or workaround
 
