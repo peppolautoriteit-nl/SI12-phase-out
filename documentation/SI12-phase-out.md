@@ -47,7 +47,7 @@ No support for g-account | Use the g-account extension
 Rounding issues | Rounding tolerance in EN-16931 validation
 Missing billing reference in credit notes | See section 'Billing Reference'
 Need credit notes without billing reference | See section 'Billing Reference'
-No AccountingCostCode field | Use AccountingCost OR update NLCIUS?
+No AccountingCostCode field | Use AccountingCost
 No cost center accounting field | Use AccountingCost
 No validation of line-level calculation | If this is wanted, use Peppol BIS, which does have line-level calculation validation
 Mandatory KvK or OIN | Use Peppol BIS (with NL rules), where KvK or OIN is only mandatory if the optional LegalIdentifier is used.
