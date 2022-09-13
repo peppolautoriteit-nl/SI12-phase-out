@@ -1,5 +1,10 @@
 # Introduction
 
+*> Update July 1st 2022*
+*SI-UBL 1.2 has been made optional by removing it as mandatory documenttype in the Peppol Authority Specific Requirements.*
+*This document can still be used as reference for the reasons and process of phasing out the document type.*
+
+
 In the Netherlands, Serviceprovider currently need to support three mandatory document types: SI-UBL 1.2, SI-UBL 2.0 (NLCIUS), and Peppol BIS 3.
 
 Standaardisatieplatform e-factureren (STPE) and the Netherlands Peppol Authority (NPA) have taken the initiative to investigate what is necessary to phase out SI-UBL 1.2 as invoice document type. This would mean that sending and receiving Peppol serviceproviders no longer exchange SI-UBL 1.2 documents on the Peppol network.
